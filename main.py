@@ -24,10 +24,19 @@ test_images = test_images / 255.0
 
 model = tf.keras.models.Sequential([
     tf.keras.layers.Flatten(),
-    tf.keras.layers.Dense(1024, activation=tf.nn.relu),
+    tf.keras.layers.Dense(64, activation=tf.nn.relu),
     tf.keras.layers.Dense(10, activation=tf.nn.softmax)
     
 ])
+
+
+
+# flatten layer removed. will cause an error
+# model = tf.keras.models.Sequential([
+#     tf.keras.layers.Dense(64, activation=tf.nn.relu),
+#     tf.keras.layers.Dense(10, activation=tf.nn.softmax)
+    
+# ])
 
 
 model.compile(
