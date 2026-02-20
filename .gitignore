@@ -4,5 +4,6 @@ aclImdb_v1_archive
 checkpoints/
 checkpoints2/
 saved_model/ 
+my_dir/
 training_*
 *.h5
