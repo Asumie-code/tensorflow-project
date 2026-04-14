@@ -7,3 +7,7 @@ saved_model/
 my_dir/
 training_*
 *.h5
+*.obj
+*.pdb
+*.exe
+*.ilk
